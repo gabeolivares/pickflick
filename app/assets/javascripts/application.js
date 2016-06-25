@@ -47,7 +47,7 @@ function createMovie() {
       actors: actors,
       genre: genre,
       year: year,
-      rating, rating
+      rating: rating
     };
     create_html = ""
     $.ajax({
@@ -254,7 +254,7 @@ function editMovie(id){
    actors: actors,
    genre: genre,
    year: year,
-   rating, rating
+   rating: rating
  };
 
  $.ajax({

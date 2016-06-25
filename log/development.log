@@ -27151,3 +27151,155 @@ Started GET "/assets/intro.svg" for ::1 at 2016-06-25 14:11:32 -0500
 
 
 Started GET "/assets/stars.png" for ::1 at 2016-06-25 14:11:32 -0500
+
+
+Started GET "/" for ::1 at 2016-06-25 15:26:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (321.0ms)
+Completed 200 OK in 436ms (Views: 425.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:26:38 -0500
+
+
+Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:26:38 -0500
+
+
+Started GET "/" for ::1 at 2016-06-25 15:27:29 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 151ms (Views: 150.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-699eb342926da0102d8a60b3fe47aeb7562bb45f3eb89702822ab4dc67deb85b.js?body=1" for ::1 at 2016-06-25 15:27:29 -0500
+
+
+Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:27:29 -0500
+
+
+Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:27:29 -0500
+
+
+Started POST "/create_movie" for ::1 at 2016-06-25 15:27:48 -0500
+Processing by MoviesController#create as */*
+  Parameters: {"title"=>"Test", "actors"=>"test", "genre"=>"test", "year"=>"2016"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 11ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordInvalid (Validation failed: Rating can't be blank):
+  app/controllers/movies_controller.rb:20:in `create'
+
+
+  Rendered /Users/gabeolivares/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/gabeolivares/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/gabeolivares/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/gabeolivares/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (69.4ms)
+
+
+Started POST "/create_movie" for ::1 at 2016-06-25 15:27:59 -0500
+Processing by MoviesController#create as */*
+  Parameters: {"title"=>"Test", "actors"=>"test", "genre"=>"test", "year"=>"2016", "rating"=>"5"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "movies" ("genre", "actors", "title", "year", "rating") VALUES (?, ?, ?, ?, ?)[0m  [["genre", "test"], ["actors", "test"], ["title", "Test"], ["year", 2016], ["rating", 5]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-25 15:28:02 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 138ms (Views: 137.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.self-4512c7fbb54a47366fe2718dcd0e093d21ef8cd7bfe9f1d1f8c59c80043fb840.css?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/application.self-c162b6f63e95395ed2c335b0aa8e2b7d542039a3637106ef95076e8a6fe3c508.css?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/jquery.scrollex.min.self-ff015fba12cea6cf11e87bf52ffd11290e7fa7c862afffb6b97dc8593e431f7b.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/jquery.scrolly.min.self-a18e5b4470d92e0940929bd04e615a653c6eee78e4be62718d47edab2edfae0c.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/main.self-699eb342926da0102d8a60b3fe47aeb7562bb45f3eb89702822ab4dc67deb85b.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/skel.min.self-d0f0985d850a5a679577e99dfd7cc7381b423f261c734ce0e48ca9992faf567d.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/utils.self-11bf665dbb593e213c4477d8d16c26b3a6e1184941b713fd45055712cfc907e3.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/application.self-43889f56849484a31ec38dcb9171bdeafffbe9c557687354919b7eb34aee8d45.js?body=1" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:28:03 -0500
