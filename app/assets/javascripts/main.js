@@ -127,6 +127,13 @@
 				speed: 1000,
 				offset: function() {
 
+					// If <=large, >small, and sidebar is present, use its height as the offset.
+						if (skel.breakpoint('large').active
+						&&	!skel.breakpoint('small').active
+						&&	$sidebar.length > 0)
+							return $sidebar.height();
+
+					return 0;
 
 				}
 			});
