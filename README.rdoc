@@ -1,0 +1,27 @@
+== README
+Movie Application: Pick Flick
+
+Requirements:
+
+--Make sure Ruby is installed: https://www.ruby-lang.org/en/documentation/installation/
+
+At least Ruby version 2.2.3
+
+--Make sure Rails is installed: http://rubyonrails.org/
+
+At least Rails version 4.2.4
+
+
+Directions:
+
+-Make sure in 'movies' directory
+
+-'bundle install' (To bundle install all the Ruby Gems)
+
+-'rake db:create:all' (To create the database in the rails project using sqlite3)
+
+-'rake db:migrate' (To create the database tables)
+
+-'rails s' (to run rails sever)
+
+-GO TO 'http://localhost:3000/' to view the single page Movie Application: Pick Flick
