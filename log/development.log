@@ -27303,3 +27303,36 @@ Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:28:03 -0500
 
 
 Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:28:03 -0500
+
+
+Started GET "/" for ::1 at 2016-06-25 15:49:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (422.9ms)
+Completed 200 OK in 577ms (Views: 567.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-194b79c1a0c19d8d170bc3b17856ec547419b813bb8fc5e4234cc12cd8bde0d4.js?body=1" for ::1 at 2016-06-25 15:49:53 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-25 15:49:53 -0500
+
+
+Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:49:54 -0500
+
+
+Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:49:54 -0500
+
+
+Started GET "/" for ::1 at 2016-06-25 15:50:28 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 153ms (Views: 151.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/intro.svg" for ::1 at 2016-06-25 15:50:28 -0500
+
+
+Started GET "/assets/stars.png" for ::1 at 2016-06-25 15:50:28 -0500
